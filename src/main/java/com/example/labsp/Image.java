@@ -1,32 +1,35 @@
 package com.example.labsp;
 
-public class Image implements Element {
-    private String name;
-    //private String path;
+import java.util.concurrent.TimeUnit;
 
-    public Image(String name) {
-        this.name = name;
-        //this.path = path;
+public class Image implements Element, Picture {
+    private String url;
+    private ImageContent content;
+
+    public Image(String url) {
+        this.url = url;
+        this.content = new ImageContent(url);
+        System.out.println("Loading image from " + url);
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public String url() {
+        return url;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public Dimension dim() {
+        return new Dimension(800, 600);
     }
 
-//    public String getPath() {
-//        return path;
-//    }
+    @Override
+    public ImageContent content() {
+        return content;
+    }
 
-//    public void setPath(String path) {
-//        this.path = path;
-//    }
-
+    @Override
     public void print() {
-        System.out.println("Image with name: " + name );// + path);
+        System.out.println("Image: " + url);
     }
 
     @Override
