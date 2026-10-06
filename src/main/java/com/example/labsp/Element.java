@@ -1,5 +1,6 @@
 package com.example.labsp;
 
+//poate fi interfata
 public abstract class Element {
     public abstract void print();
 
