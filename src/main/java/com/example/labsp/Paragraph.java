@@ -1,6 +1,6 @@
 package com.example.labsp;
 
-public class Paragraph extends Element{
+public class Paragraph implements Element{
     private String text;
     private AlignStrategy textAlignment;
 
@@ -29,6 +29,21 @@ public class Paragraph extends Element{
         } else {
             System.out.println(text);
         }
+    }
+
+    @Override
+    public void add(Element element) {
+
+    }
+
+    @Override
+    public void remove(Element element) {
+
+    }
+
+    @Override
+    public Element get(int index) {
+        return null;
     }
 
 }
