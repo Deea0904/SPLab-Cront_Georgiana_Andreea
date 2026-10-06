@@ -1,17 +1,11 @@
 package com.example.labsp;
 
 //poate fi interfata
-public abstract class Element {
-    public abstract void print();
+public interface Element {
+     void print();
 
-    public void add(Element element) {
-        throw new UnsupportedOperationException("Cannot add element to this type");
-    }
-    public void remove(Element element) {
-        throw new UnsupportedOperationException("Cannot remove element from this type");
-    }
+     void add(Element element) ;
+     void remove(Element element) ;
 
-    public Element get(int index) {
-        throw new UnsupportedOperationException("Cannot get element from this type");
-    }
+    Element get(int index) ;
 }

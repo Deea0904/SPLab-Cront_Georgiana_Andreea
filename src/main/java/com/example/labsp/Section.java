@@ -2,7 +2,7 @@ package com.example.labsp;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Section extends Element{
+public class Section implements Element{
     private String name;
     private final List<Element> elements= new ArrayList<>();
 
