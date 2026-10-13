@@ -33,9 +33,9 @@ public class LabSpApplication {
         endTime = System.currentTimeMillis();
         System.out.println("Printing again the section 1 took " + (endTime -
                 startTime) + " milliseconds");
-        BookStatistics stats = new BookStatistics();
-        playboy.accept(stats);
-        stats.printStatistics();
+        BookStatistics stat= new BookStatistics();
+        playboy.accept(stat);
+        stat.printStatistics();
     }
 
 
