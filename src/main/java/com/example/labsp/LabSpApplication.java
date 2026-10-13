@@ -18,8 +18,8 @@ public class LabSpApplication {
         playboyS2.add(img3);
         Book playboy = new Book("Playboy");
 
-        playboy.addContent(playboyS1);
-        playboy.addContent(playboyS2);
+        playboy.add(playboyS1);
+        playboy.add(playboyS2);
         long endTime = System.currentTimeMillis();
         System.out.println("Creation of the content took " + (endTime -
                 startTime) + " milliseconds");
@@ -33,6 +33,10 @@ public class LabSpApplication {
         endTime = System.currentTimeMillis();
         System.out.println("Printing again the section 1 took " + (endTime -
                 startTime) + " milliseconds");
+        BookStatistics stats = new BookStatistics();
+        playboy.accept(stats);
+        stats.printStatistics();
     }
+
 
 }

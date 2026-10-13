@@ -28,6 +28,11 @@ public class Image implements Element, Picture {
     }
 
     @Override
+    public void accept(Visitor visitor) {
+        visitor.visitImage(this);
+    }
+
+    @Override
     public void print() {
         System.out.println("Image: " + url);
     }

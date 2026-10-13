@@ -37,4 +37,11 @@ public class Section implements Element{
             element.print();
         }
     }
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitSection(this);
+        for (Element e : elements) {
+            e.accept(visitor);
+        }
+    }
 }
