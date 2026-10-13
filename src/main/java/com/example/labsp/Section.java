@@ -30,6 +30,10 @@ public class Section implements Element{
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public void print() {
         System.out.println( name);
