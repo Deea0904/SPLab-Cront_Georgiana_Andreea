@@ -2,7 +2,7 @@ package com.example.labsp;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book {
+public class Book implements Element{
     private String title;
     private final List <Element> elements=new ArrayList<>();
     private final List <Author> authors=new ArrayList<>();
@@ -11,17 +11,7 @@ public class Book {
         this.title = title;
     }
 
-    public void addContent(Element element) {
-        elements.add(element);
-    }
 
-    public void removeContent(Element element) {
-        elements.remove(element);
-    }
-
-    public Element getElement(int index) {
-        return elements.get(index);
-    }
 
     public void addAuthor(Author author) {
         authors.add(author);
@@ -60,5 +50,28 @@ public class Book {
         for (Element element : elements) {
             element.print();
         }
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitBook(this);
+        for (Element e : elements) {
+            e.accept(visitor);
+        }
+    }
+
+    @Override
+    public void add(Element element) {
+        elements.add(element);
+    }
+
+    @Override
+    public void remove(Element element) {
+        elements.remove(element);
+    }
+
+    @Override
+    public Element get(int index) {
+        return elements.get(index);
     }
 }
