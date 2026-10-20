@@ -48,4 +48,8 @@ public class Section implements Element{
             e.accept(visitor);
         }
     }
+
+    public String getTitle() {
+        return name;
+    }
 }
