@@ -1,15 +1,23 @@
 package com.example.labsp;
 
-import java.awt.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Transient;
 
-public class ImageProxy implements Element, Picture {
+@Entity
+public class ImageProxy extends BaseElement implements Element, Picture {
+
     private String url;
-    private Dimension dim;
+
+    @Transient
+    private Dimension dim = new Dimension(800, 600);
+
+    @Transient
     private Image realImg;
+
+    public ImageProxy() {}
 
     public ImageProxy(String url) {
         this.url = url;
-        this.dim = new Dimension(800, 600);
     }
 
     private Image loadImage() {
@@ -17,6 +25,10 @@ public class ImageProxy implements Element, Picture {
             realImg = new Image(url);
         }
         return realImg;
+    }
+
+    public String getUrl() {
+        return url;
     }
 
     @Override
@@ -41,12 +53,10 @@ public class ImageProxy implements Element, Picture {
 
     @Override
     public void add(Element element) {
-
     }
 
     @Override
     public void remove(Element element) {
-
     }
 
     @Override

@@ -1,19 +1,19 @@
 package com.example.labsp.commands;
 
-import com.example.labsp.books.BookDTO;
-import com.example.labsp.books.BooksService;
+import com.example.labsp.Book;
+import com.example.labsp.persistence.CrudRepository;
 
 import java.util.List;
 
-public class GetAllBooksCommand implements Command<List<BookDTO>> {
-    private final BooksService service;
+public class GetAllBooksCommand implements Command<List<Book>> {
+    private final CrudRepository<Book, Integer> repo;
 
-    public GetAllBooksCommand(BooksService service) {
-        this.service = service;
+    public GetAllBooksCommand(CrudRepository<Book, Integer> repo) {
+        this.repo = repo;
     }
 
     @Override
-    public List<BookDTO> execute() {
-        return service.getAll();
+    public List<Book> execute() {
+        return repo.findAll();
     }
 }

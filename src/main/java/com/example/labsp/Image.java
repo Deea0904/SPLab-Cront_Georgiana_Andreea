@@ -1,15 +1,26 @@
 package com.example.labsp;
 
-import java.util.concurrent.TimeUnit;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Transient;
 
-public class Image implements Element, Picture {
+@Entity
+public class Image extends BaseElement implements Element, Picture {
+
     private String url;
+
+    @Transient
     private ImageContent content;
+
+    public Image() {}
 
     public Image(String url) {
         this.url = url;
         this.content = new ImageContent(url);
         System.out.println("Loading image from " + url);
+    }
+
+    public String getUrl() {
+        return url;
     }
 
     @Override
@@ -24,6 +35,9 @@ public class Image implements Element, Picture {
 
     @Override
     public ImageContent content() {
+        if (content == null) {
+            content = new ImageContent(url);
+        }
         return content;
     }
 
@@ -39,12 +53,10 @@ public class Image implements Element, Picture {
 
     @Override
     public void add(Element element) {
-
     }
 
     @Override
     public void remove(Element element) {
-
     }
 
     @Override

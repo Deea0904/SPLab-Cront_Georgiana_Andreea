@@ -1,18 +1,21 @@
 package com.example.labsp.commands;
 
-import com.example.labsp.books.BooksService;
+import com.example.labsp.Book;
+import com.example.labsp.persistence.CrudRepository;
 
 public class DeleteBookCommand implements Command<Boolean> {
-    private final BooksService service;
+    private final CrudRepository<Book, Integer> repo;
     private final int id;
 
-    public DeleteBookCommand(BooksService service, int id) {
-        this.service = service;
+    public DeleteBookCommand(CrudRepository<Book, Integer> repo, int id) {
+        this.repo = repo;
         this.id = id;
     }
 
     @Override
     public Boolean execute() {
-        return service.delete(id);
+        if (!repo.existsById(id)) return false;
+        repo.deleteById(id);
+        return true;
     }
 }

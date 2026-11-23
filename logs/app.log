@@ -1,0 +1,719 @@
+2026-11-23T22:56:14.616+02:00  INFO 11412 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Starting LabSpApplication using Java 25 with PID 11412 (C:\Users\LENOVO\Documents\Facultate 3\LabSP\target\classes started by LENOVO in C:\Users\LENOVO\Documents\Facultate 3\LabSP)
+2026-11-23T22:56:14.621+02:00  INFO 11412 --- [LabSP] [main] com.example.labsp.LabSpApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-11-23T22:56:15.553+02:00  INFO 11412 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-23T22:56:15.591+02:00  INFO 11412 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2026-11-23T22:56:16.139+02:00  INFO 11412 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-23T22:56:16.156+02:00  INFO 11412 --- [LabSP] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-23T22:56:16.157+02:00  INFO 11412 --- [LabSP] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-23T22:56:16.219+02:00  INFO 11412 --- [LabSP] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1535 ms
+2026-11-23T22:56:16.473+02:00  INFO 11412 --- [LabSP] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-23T22:56:16.543+02:00  INFO 11412 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-23T22:56:17.193+02:00  INFO 11412 --- [LabSP] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-23T22:56:17.241+02:00  INFO 11412 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-23T22:56:17.604+02:00  INFO 11412 --- [LabSP] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/h2db/booksdb user=SA
+2026-11-23T22:56:17.607+02:00  INFO 11412 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-23T22:56:17.640+02:00  WARN 11412 --- [LabSP] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-23T22:56:17.674+02:00  INFO 11412 --- [LabSP] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:~/h2db/booksdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: BOOKSDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-23T22:56:18.252+02:00  INFO 11412 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-23T22:56:18.371+02:00  INFO 11412 --- [LabSP] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T22:56:18.475+02:00  WARN 11412 --- [LabSP] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-23T22:56:18.879+02:00  INFO 11412 --- [LabSP] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/h2db/booksdb'
+2026-11-23T22:56:18.956+02:00  INFO 11412 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-23T22:56:18.964+02:00  INFO 11412 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Started LabSpApplication in 5.077 seconds (process running for 6.072)
+2026-11-23T22:57:27.519+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console
+2026-11-23T22:57:27.520+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console -> status 302
+2026-11-23T22:57:27.527+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/
+2026-11-23T22:57:27.552+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/ -> status 200
+2026-11-23T22:57:27.606+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/stylesheet.css
+2026-11-23T22:57:27.619+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/stylesheet.css -> status 200
+2026-11-23T22:57:27.656+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/login.jsp
+2026-11-23T22:57:27.660+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/login.jsp -> status 200
+2026-11-23T22:57:27.749+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/background.gif
+2026-11-23T22:57:27.751+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/background.gif -> status 200
+2026-11-23T22:57:27.898+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-23T22:57:27.898+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-23T22:57:27.901+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-11-23T22:57:27.902+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /favicon.ico
+2026-11-23T22:57:28.024+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /favicon.ico -> status 404
+2026-11-23T22:57:56.861+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T22:57:56.901+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T22:57:56.948+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/stylesheet.css
+2026-11-23T22:57:56.949+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/stylesheet.css -> status 304
+2026-11-23T22:57:56.970+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/background.gif
+2026-11-23T22:57:56.971+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/background.gif -> status 304
+2026-11-23T22:58:27.880+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T22:58:27.890+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T22:58:27.969+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/stylesheet.css
+2026-11-23T22:58:27.969+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/header.jsp
+2026-11-23T22:58:27.969+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/stylesheet.css -> status 304
+2026-11-23T22:58:27.971+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tables.do
+2026-11-23T22:58:27.972+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/header.jsp -> status 200
+2026-11-23T22:58:27.976+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/query.jsp
+2026-11-23T22:58:27.978+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/help.jsp
+2026-11-23T22:58:27.981+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/help.jsp -> status 200
+2026-11-23T22:58:27.982+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/query.jsp -> status 200
+2026-11-23T22:58:28.041+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_help.gif
+2026-11-23T22:58:28.041+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_disconnect.gif
+2026-11-23T22:58:28.041+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_line.gif
+2026-11-23T22:58:28.042+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_rollback.gif
+2026-11-23T22:58:28.042+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_refresh.gif
+2026-11-23T22:58:28.043+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_refresh.gif -> status 200
+2026-11-23T22:58:28.043+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_help.gif -> status 200
+2026-11-23T22:58:28.043+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_rollback.gif -> status 200
+2026-11-23T22:58:28.043+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_disconnect.gif -> status 200
+2026-11-23T22:58:28.043+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_line.gif -> status 200
+2026-11-23T22:58:28.047+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_history.gif
+2026-11-23T22:58:28.047+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_commit.gif
+2026-11-23T22:58:28.048+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run.gif
+2026-11-23T22:58:28.049+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_commit.gif -> status 200
+2026-11-23T22:58:28.050+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_history.gif -> status 200
+2026-11-23T22:58:28.050+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run_selected.gif
+2026-11-23T22:58:28.051+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_stop.gif
+2026-11-23T22:58:28.051+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run.gif -> status 200
+2026-11-23T22:58:28.052+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run_selected.gif -> status 200
+2026-11-23T22:58:28.053+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_stop.gif -> status 200
+2026-11-23T22:58:28.161+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tables.do -> status 200
+2026-11-23T22:58:28.189+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree.js
+2026-11-23T22:58:28.191+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree.js -> status 200
+2026-11-23T22:58:28.203+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_minus.gif
+2026-11-23T22:58:28.204+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_plus.gif
+2026-11-23T22:58:28.204+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_database.gif
+2026-11-23T22:58:28.204+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_minus.gif -> status 200
+2026-11-23T22:58:28.205+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_empty.gif
+2026-11-23T22:58:28.205+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_folder.gif
+2026-11-23T22:58:28.205+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_view.gif
+2026-11-23T22:58:28.206+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_database.gif -> status 200
+2026-11-23T22:58:28.206+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_plus.gif -> status 200
+2026-11-23T22:58:28.206+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_folder.gif -> status 200
+2026-11-23T22:58:28.207+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_empty.gif -> status 200
+2026-11-23T22:58:28.207+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_view.gif -> status 200
+2026-11-23T22:58:28.209+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_users.gif
+2026-11-23T22:58:28.210+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_users.gif -> status 200
+2026-11-23T22:58:28.212+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_info.gif
+2026-11-23T22:58:28.214+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_info.gif -> status 200
+2026-11-23T22:58:28.214+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_table.gif
+2026-11-23T22:58:28.214+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_user.gif
+2026-11-23T22:58:28.215+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_type.gif
+2026-11-23T22:58:28.215+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_table.gif -> status 200
+2026-11-23T22:58:28.216+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_user.gif -> status 200
+2026-11-23T22:58:28.216+02:00  INFO 11412 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_type.gif -> status 200
+2026-11-23T23:00:08.044+02:00  INFO 11412 --- [LabSP] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-23T23:00:08.054+02:00  INFO 11412 --- [LabSP] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-23T23:00:08.059+02:00  INFO 11412 --- [LabSP] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:00:08.062+02:00  INFO 11412 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-23T23:00:08.064+02:00  INFO 11412 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-23T23:00:13.497+02:00  INFO 9180 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Starting LabSpApplication using Java 25 with PID 9180 (C:\Users\LENOVO\Documents\Facultate 3\LabSP\target\classes started by LENOVO in C:\Users\LENOVO\Documents\Facultate 3\LabSP)
+2026-11-23T23:00:13.500+02:00  INFO 9180 --- [LabSP] [main] com.example.labsp.LabSpApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-11-23T23:00:14.272+02:00  INFO 9180 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-23T23:00:14.314+02:00  INFO 9180 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 JPA repository interfaces.
+2026-11-23T23:00:14.813+02:00  INFO 9180 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-23T23:00:14.830+02:00  INFO 9180 --- [LabSP] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-23T23:00:14.831+02:00  INFO 9180 --- [LabSP] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-23T23:00:14.893+02:00  INFO 9180 --- [LabSP] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1342 ms
+2026-11-23T23:00:15.119+02:00  INFO 9180 --- [LabSP] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-23T23:00:15.194+02:00  INFO 9180 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-23T23:00:15.770+02:00  INFO 9180 --- [LabSP] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-23T23:00:15.811+02:00  INFO 9180 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-23T23:00:16.142+02:00  INFO 9180 --- [LabSP] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/h2db/booksdb user=SA
+2026-11-23T23:00:16.145+02:00  INFO 9180 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-23T23:00:16.176+02:00  WARN 9180 --- [LabSP] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-23T23:00:16.208+02:00  INFO 9180 --- [LabSP] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:~/h2db/booksdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: BOOKSDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-23T23:00:17.468+02:00  INFO 9180 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-23T23:00:17.599+02:00  INFO 9180 --- [LabSP] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:00:17.690+02:00  WARN 9180 --- [LabSP] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-23T23:00:18.068+02:00  INFO 9180 --- [LabSP] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/h2db/booksdb'
+2026-11-23T23:00:18.136+02:00  INFO 9180 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-23T23:00:18.144+02:00  INFO 9180 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Started LabSpApplication in 5.182 seconds (process running for 5.948)
+2026-11-23T23:02:15.912+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T23:02:15.989+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T23:02:16.054+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/stylesheet.css
+2026-11-23T23:02:16.068+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/stylesheet.css -> status 200
+2026-11-23T23:02:16.111+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/login.jsp
+2026-11-23T23:02:16.117+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/login.jsp -> status 200
+2026-11-23T23:02:16.210+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/background.gif
+2026-11-23T23:02:16.214+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/background.gif -> status 200
+2026-11-23T23:02:19.233+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T23:02:19.249+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T23:02:19.337+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/query.jsp
+2026-11-23T23:02:19.336+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/header.jsp
+2026-11-23T23:02:19.337+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tables.do
+2026-11-23T23:02:19.338+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/help.jsp
+2026-11-23T23:02:19.341+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/header.jsp -> status 200
+2026-11-23T23:02:19.341+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/help.jsp -> status 200
+2026-11-23T23:02:19.343+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/query.jsp -> status 200
+2026-11-23T23:02:19.412+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_refresh.gif
+2026-11-23T23:02:19.411+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_disconnect.gif
+2026-11-23T23:02:19.411+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_line.gif
+2026-11-23T23:02:19.414+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_refresh.gif -> status 200
+2026-11-23T23:02:19.414+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_disconnect.gif -> status 200
+2026-11-23T23:02:19.416+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_commit.gif
+2026-11-23T23:02:19.416+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_line.gif -> status 200
+2026-11-23T23:02:19.416+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_rollback.gif
+2026-11-23T23:02:19.418+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_commit.gif -> status 200
+2026-11-23T23:02:19.418+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_rollback.gif -> status 200
+2026-11-23T23:02:19.433+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_history.gif
+2026-11-23T23:02:19.433+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run.gif
+2026-11-23T23:02:19.433+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_help.gif
+2026-11-23T23:02:19.435+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run_selected.gif
+2026-11-23T23:02:19.435+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_help.gif -> status 200
+2026-11-23T23:02:19.435+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_history.gif -> status 200
+2026-11-23T23:02:19.435+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run_selected.gif -> status 200
+2026-11-23T23:02:19.436+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run.gif -> status 200
+2026-11-23T23:02:19.437+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_stop.gif
+2026-11-23T23:02:19.441+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_stop.gif -> status 200
+2026-11-23T23:02:19.524+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tables.do -> status 200
+2026-11-23T23:02:19.549+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree.js
+2026-11-23T23:02:19.578+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree.js -> status 200
+2026-11-23T23:02:19.587+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_minus.gif
+2026-11-23T23:02:19.587+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_plus.gif
+2026-11-23T23:02:19.588+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_table.gif
+2026-11-23T23:02:19.587+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_database.gif
+2026-11-23T23:02:19.588+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_column.gif
+2026-11-23T23:02:19.588+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_empty.gif
+2026-11-23T23:02:19.590+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_minus.gif -> status 200
+2026-11-23T23:02:19.590+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_plus.gif -> status 200
+2026-11-23T23:02:19.590+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_column.gif -> status 200
+2026-11-23T23:02:19.590+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_table.gif -> status 200
+2026-11-23T23:02:19.590+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_database.gif -> status 200
+2026-11-23T23:02:19.590+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_empty.gif -> status 200
+2026-11-23T23:02:19.596+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_view.gif
+2026-11-23T23:02:19.596+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_index.gif
+2026-11-23T23:02:19.596+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_type.gif
+2026-11-23T23:02:19.596+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_index_az.gif
+2026-11-23T23:02:19.596+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_folder.gif
+2026-11-23T23:02:19.597+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_users.gif
+2026-11-23T23:02:19.597+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_folder.gif -> status 200
+2026-11-23T23:02:19.597+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_index_az.gif -> status 200
+2026-11-23T23:02:19.598+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_index.gif -> status 200
+2026-11-23T23:02:19.598+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_type.gif -> status 200
+2026-11-23T23:02:19.598+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_users.gif -> status 200
+2026-11-23T23:02:19.598+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_view.gif -> status 200
+2026-11-23T23:02:19.600+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_info.gif
+2026-11-23T23:02:19.603+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_info.gif -> status 200
+2026-11-23T23:02:19.603+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_user.gif
+2026-11-23T23:02:19.605+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_user.gif -> status 200
+2026-11-23T23:02:58.780+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/query.do
+2026-11-23T23:02:58.833+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/query.do -> status 200
+2026-11-23T23:02:58.863+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/stylesheet.css
+2026-11-23T23:02:58.864+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/stylesheet.css -> status 304
+2026-11-23T23:02:58.864+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/table.js
+2026-11-23T23:02:58.868+02:00  INFO 9180 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/table.js -> status 200
+2026-11-23T23:04:27.697+02:00  INFO 9180 --- [LabSP] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-23T23:04:27.708+02:00  INFO 9180 --- [LabSP] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-23T23:04:27.713+02:00  INFO 9180 --- [LabSP] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:04:27.716+02:00  INFO 9180 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-23T23:04:27.718+02:00  INFO 9180 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-23T23:05:01.257+02:00  INFO 28640 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Starting LabSpApplication using Java 25 with PID 28640 (C:\Users\LENOVO\Documents\Facultate 3\LabSP\target\classes started by LENOVO in C:\Users\LENOVO\Documents\Facultate 3\LabSP)
+2026-11-23T23:05:01.261+02:00  INFO 28640 --- [LabSP] [main] com.example.labsp.LabSpApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-11-23T23:05:02.073+02:00  INFO 28640 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-23T23:05:02.103+02:00  INFO 28640 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+2026-11-23T23:05:02.616+02:00  INFO 28640 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-23T23:05:02.636+02:00  INFO 28640 --- [LabSP] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-23T23:05:02.637+02:00  INFO 28640 --- [LabSP] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-23T23:05:02.713+02:00  INFO 28640 --- [LabSP] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1392 ms
+2026-11-23T23:05:02.994+02:00  INFO 28640 --- [LabSP] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-23T23:05:03.065+02:00  INFO 28640 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-23T23:05:03.677+02:00  INFO 28640 --- [LabSP] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-23T23:05:03.722+02:00  INFO 28640 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-23T23:05:04.039+02:00  INFO 28640 --- [LabSP] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/h2db/booksdb user=SA
+2026-11-23T23:05:04.043+02:00  INFO 28640 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-23T23:05:04.079+02:00  WARN 28640 --- [LabSP] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-23T23:05:04.114+02:00  INFO 28640 --- [LabSP] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:~/h2db/booksdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: BOOKSDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-23T23:05:05.256+02:00 ERROR 28640 --- [LabSP] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.MappingException: Plural attribute [com.example.labsp.Book.elements] was mapped with targetEntity=`com.example.labsp.BaseElement`, but the attribute is declared as `com.example.labsp.Element`
+2026-11-23T23:05:05.257+02:00  WARN 28640 --- [LabSP] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.MappingException: Plural attribute [com.example.labsp.Book.elements] was mapped with targetEntity=`com.example.labsp.BaseElement`, but the attribute is declared as `com.example.labsp.Element`
+2026-11-23T23:05:05.258+02:00  INFO 28640 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-23T23:05:05.265+02:00  INFO 28640 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-23T23:05:05.269+02:00  INFO 28640 --- [LabSP] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-23T23:05:05.286+02:00  INFO 28640 --- [LabSP] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-23T23:05:05.313+02:00 ERROR 28640 --- [LabSP] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.MappingException: Plural attribute [com.example.labsp.Book.elements] was mapped with targetEntity=`com.example.labsp.BaseElement`, but the attribute is declared as `com.example.labsp.Element`
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.9.jar:7.0.9]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.1.jar:4.1.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.1.jar:4.1.1]
+	at com.example.labsp.LabSpApplication.main(LabSpApplication.java:56) ~[classes/:na]
+Caused by: jakarta.persistence.PersistenceException: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.MappingException: Plural attribute [com.example.labsp.Book.elements] was mapped with targetEntity=`com.example.labsp.BaseElement`, but the attribute is declared as `com.example.labsp.Element`
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:448) ~[spring-orm-7.0.9.jar:7.0.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.9.jar:7.0.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862) ~[spring-beans-7.0.9.jar:7.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811) ~[spring-beans-7.0.9.jar:7.0.9]
+	... 15 common frames omitted
+Caused by: org.hibernate.MappingException: Plural attribute [com.example.labsp.Book.elements] was mapped with targetEntity=`com.example.labsp.BaseElement`, but the attribute is declared as `com.example.labsp.Element`
+	at org.hibernate.metamodel.mapping.internal.PluralAttributeMappingImpl.checkElementType(PluralAttributeMappingImpl.java:248) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.metamodel.mapping.internal.PluralAttributeMappingImpl.validateTargetEntity(PluralAttributeMappingImpl.java:221) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.metamodel.mapping.internal.PluralAttributeMappingImpl.<init>(PluralAttributeMappingImpl.java:196) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationHelper.buildPluralAttributeMapping(MappingModelCreationHelper.java:731) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationHelper.buildPluralAttributeMapping(MappingModelCreationHelper.java:507) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.buildPluralAttributeMapping(AbstractEntityPersister.java:5790) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.generateNonIdAttributeMapping(AbstractEntityPersister.java:5680) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.generateNonIdAttributeMapping(AbstractEntityPersister.java:5468) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.buildDeclaredAttributeMappings(AbstractEntityPersister.java:4899) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareMappings(AbstractEntityPersister.java:4851) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.prepareMappingModel(AbstractEntityPersister.java:4817) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.execute(MappingModelCreationProcess.java:88) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.metamodel.mapping.internal.MappingModelCreationProcess.process(MappingModelCreationProcess.java:43) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.finishInitialization(MappingMetamodelImpl.java:166) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:287) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452) ~[hibernate-core-7.4.5.Final.jar:7.4.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.9.jar:7.0.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.9.jar:7.0.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.9.jar:7.0.9]
+	... 19 common frames omitted
+
+2026-11-23T23:06:10.308+02:00  INFO 31440 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Starting LabSpApplication using Java 25 with PID 31440 (C:\Users\LENOVO\Documents\Facultate 3\LabSP\target\classes started by LENOVO in C:\Users\LENOVO\Documents\Facultate 3\LabSP)
+2026-11-23T23:06:10.312+02:00  INFO 31440 --- [LabSP] [main] com.example.labsp.LabSpApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-11-23T23:06:11.175+02:00  INFO 31440 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-23T23:06:11.213+02:00  INFO 31440 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+2026-11-23T23:06:11.826+02:00  INFO 31440 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-23T23:06:11.844+02:00  INFO 31440 --- [LabSP] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-23T23:06:11.845+02:00  INFO 31440 --- [LabSP] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-23T23:06:11.911+02:00  INFO 31440 --- [LabSP] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1537 ms
+2026-11-23T23:06:12.166+02:00  INFO 31440 --- [LabSP] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-23T23:06:12.247+02:00  INFO 31440 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-23T23:06:12.936+02:00  INFO 31440 --- [LabSP] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-23T23:06:12.981+02:00  INFO 31440 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-23T23:06:13.255+02:00  INFO 31440 --- [LabSP] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/h2db/booksdb user=SA
+2026-11-23T23:06:13.258+02:00  INFO 31440 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-23T23:06:13.288+02:00  WARN 31440 --- [LabSP] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-23T23:06:13.327+02:00  INFO 31440 --- [LabSP] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:~/h2db/booksdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: BOOKSDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-23T23:06:14.680+02:00  INFO 31440 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-23T23:06:14.815+02:00  INFO 31440 --- [LabSP] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:06:14.891+02:00  WARN 31440 --- [LabSP] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-23T23:06:15.331+02:00  INFO 31440 --- [LabSP] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/h2db/booksdb'
+2026-11-23T23:06:15.402+02:00  INFO 31440 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-23T23:06:15.409+02:00  INFO 31440 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Started LabSpApplication in 5.75 seconds (process running for 6.673)
+2026-11-23T23:06:26.044+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T23:06:26.078+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T23:06:26.118+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/stylesheet.css
+2026-11-23T23:06:26.133+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/stylesheet.css -> status 200
+2026-11-23T23:06:26.212+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/login.jsp
+2026-11-23T23:06:26.218+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/login.jsp -> status 200
+2026-11-23T23:06:26.316+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/background.gif
+2026-11-23T23:06:26.319+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/background.gif -> status 200
+2026-11-23T23:06:30.399+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T23:06:30.417+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T23:06:30.515+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tables.do
+2026-11-23T23:06:30.515+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/header.jsp
+2026-11-23T23:06:30.520+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/header.jsp -> status 200
+2026-11-23T23:06:30.521+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/query.jsp
+2026-11-23T23:06:30.521+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/help.jsp
+2026-11-23T23:06:30.526+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/help.jsp -> status 200
+2026-11-23T23:06:30.528+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/query.jsp -> status 200
+2026-11-23T23:06:30.602+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_disconnect.gif
+2026-11-23T23:06:30.605+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_disconnect.gif -> status 200
+2026-11-23T23:06:30.610+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_help.gif
+2026-11-23T23:06:30.611+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_line.gif
+2026-11-23T23:06:30.613+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_rollback.gif
+2026-11-23T23:06:30.613+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_refresh.gif
+2026-11-23T23:06:30.614+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_help.gif -> status 200
+2026-11-23T23:06:30.615+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_rollback.gif -> status 200
+2026-11-23T23:06:30.615+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_refresh.gif -> status 200
+2026-11-23T23:06:30.615+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_line.gif -> status 200
+2026-11-23T23:06:30.618+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_history.gif
+2026-11-23T23:06:30.622+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_history.gif -> status 200
+2026-11-23T23:06:30.623+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_commit.gif
+2026-11-23T23:06:30.624+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run.gif
+2026-11-23T23:06:30.625+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_stop.gif
+2026-11-23T23:06:30.625+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_commit.gif -> status 200
+2026-11-23T23:06:30.625+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run_selected.gif
+2026-11-23T23:06:30.626+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run_selected.gif -> status 200
+2026-11-23T23:06:30.627+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run.gif -> status 200
+2026-11-23T23:06:30.627+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_stop.gif -> status 200
+2026-11-23T23:06:30.722+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tables.do -> status 200
+2026-11-23T23:06:30.751+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree.js
+2026-11-23T23:06:30.755+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree.js -> status 200
+2026-11-23T23:06:30.771+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_database.gif
+2026-11-23T23:06:30.771+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_column.gif
+2026-11-23T23:06:30.771+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_empty.gif
+2026-11-23T23:06:30.771+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_plus.gif
+2026-11-23T23:06:30.771+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_minus.gif
+2026-11-23T23:06:30.771+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_table.gif
+2026-11-23T23:06:30.773+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_column.gif -> status 200
+2026-11-23T23:06:30.773+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_table.gif -> status 200
+2026-11-23T23:06:30.773+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_database.gif -> status 200
+2026-11-23T23:06:30.773+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_plus.gif -> status 200
+2026-11-23T23:06:30.773+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_minus.gif -> status 200
+2026-11-23T23:06:30.774+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_empty.gif -> status 200
+2026-11-23T23:06:30.781+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_folder.gif
+2026-11-23T23:06:30.780+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_index_az.gif
+2026-11-23T23:06:30.780+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_view.gif
+2026-11-23T23:06:30.780+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_type.gif
+2026-11-23T23:06:30.780+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_index.gif
+2026-11-23T23:06:30.781+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_users.gif
+2026-11-23T23:06:30.782+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_folder.gif -> status 200
+2026-11-23T23:06:30.782+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_index_az.gif -> status 200
+2026-11-23T23:06:30.782+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_index.gif -> status 200
+2026-11-23T23:06:30.782+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_users.gif -> status 200
+2026-11-23T23:06:30.782+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_type.gif -> status 200
+2026-11-23T23:06:30.783+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_view.gif -> status 200
+2026-11-23T23:06:30.788+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_user.gif
+2026-11-23T23:06:30.788+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_info.gif
+2026-11-23T23:06:30.790+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_user.gif -> status 200
+2026-11-23T23:06:30.790+02:00  INFO 31440 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_info.gif -> status 200
+2026-11-23T23:09:57.639+02:00  INFO 31440 --- [LabSP] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-23T23:09:57.651+02:00  INFO 31440 --- [LabSP] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-23T23:09:57.655+02:00  INFO 31440 --- [LabSP] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:09:57.658+02:00  INFO 31440 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-23T23:09:57.660+02:00  INFO 31440 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-23T23:10:03.259+02:00  INFO 12324 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Starting LabSpApplication using Java 25 with PID 12324 (C:\Users\LENOVO\Documents\Facultate 3\LabSP\target\classes started by LENOVO in C:\Users\LENOVO\Documents\Facultate 3\LabSP)
+2026-11-23T23:10:03.263+02:00  INFO 12324 --- [LabSP] [main] com.example.labsp.LabSpApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-11-23T23:10:04.052+02:00  INFO 12324 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-23T23:10:04.084+02:00  INFO 12324 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+2026-11-23T23:10:04.618+02:00  INFO 12324 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-23T23:10:04.637+02:00  INFO 12324 --- [LabSP] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-23T23:10:04.637+02:00  INFO 12324 --- [LabSP] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-23T23:10:04.698+02:00  INFO 12324 --- [LabSP] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1381 ms
+2026-11-23T23:10:04.922+02:00  INFO 12324 --- [LabSP] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-23T23:10:04.989+02:00  INFO 12324 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-23T23:10:05.553+02:00  INFO 12324 --- [LabSP] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-23T23:10:05.599+02:00  INFO 12324 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-23T23:10:05.895+02:00  INFO 12324 --- [LabSP] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/h2db/booksdb user=SA
+2026-11-23T23:10:05.898+02:00  INFO 12324 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-23T23:10:05.932+02:00  WARN 12324 --- [LabSP] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-23T23:10:05.965+02:00  INFO 12324 --- [LabSP] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:~/h2db/booksdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: BOOKSDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-23T23:10:07.303+02:00  INFO 12324 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-23T23:10:07.401+02:00  INFO 12324 --- [LabSP] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:10:07.472+02:00  WARN 12324 --- [LabSP] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-23T23:10:07.837+02:00  INFO 12324 --- [LabSP] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/h2db/booksdb'
+2026-11-23T23:10:07.902+02:00  INFO 12324 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-23T23:10:07.908+02:00  INFO 12324 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Started LabSpApplication in 5.228 seconds (process running for 5.991)
+2026-11-23T23:10:14.847+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T23:10:14.871+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T23:10:14.920+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/stylesheet.css
+2026-11-23T23:10:14.934+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/stylesheet.css -> status 200
+2026-11-23T23:10:14.958+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/login.jsp
+2026-11-23T23:10:14.962+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/login.jsp -> status 200
+2026-11-23T23:10:15.025+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/background.gif
+2026-11-23T23:10:15.027+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/background.gif -> status 200
+2026-11-23T23:10:17.107+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T23:10:17.133+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T23:10:17.214+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tables.do
+2026-11-23T23:10:17.214+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/header.jsp
+2026-11-23T23:10:17.216+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/query.jsp
+2026-11-23T23:10:17.217+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/help.jsp
+2026-11-23T23:10:17.220+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/header.jsp -> status 200
+2026-11-23T23:10:17.220+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/help.jsp -> status 200
+2026-11-23T23:10:17.221+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/query.jsp -> status 200
+2026-11-23T23:10:17.260+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_disconnect.gif
+2026-11-23T23:10:17.260+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_help.gif
+2026-11-23T23:10:17.261+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_help.gif -> status 200
+2026-11-23T23:10:17.262+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_line.gif
+2026-11-23T23:10:17.262+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_disconnect.gif -> status 200
+2026-11-23T23:10:17.263+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_rollback.gif
+2026-11-23T23:10:17.263+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_refresh.gif
+2026-11-23T23:10:17.264+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_refresh.gif -> status 200
+2026-11-23T23:10:17.265+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_rollback.gif -> status 200
+2026-11-23T23:10:17.265+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_line.gif -> status 200
+2026-11-23T23:10:17.268+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_history.gif
+2026-11-23T23:10:17.268+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_commit.gif
+2026-11-23T23:10:17.269+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_commit.gif -> status 200
+2026-11-23T23:10:17.270+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_history.gif -> status 200
+2026-11-23T23:10:17.270+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_stop.gif
+2026-11-23T23:10:17.270+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run_selected.gif
+2026-11-23T23:10:17.270+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run.gif
+2026-11-23T23:10:17.272+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run_selected.gif -> status 200
+2026-11-23T23:10:17.272+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_stop.gif -> status 200
+2026-11-23T23:10:17.273+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run.gif -> status 200
+2026-11-23T23:10:17.367+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tables.do -> status 200
+2026-11-23T23:10:17.413+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree.js
+2026-11-23T23:10:17.416+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree.js -> status 200
+2026-11-23T23:10:17.425+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_minus.gif
+2026-11-23T23:10:17.426+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_plus.gif
+2026-11-23T23:10:17.426+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_database.gif
+2026-11-23T23:10:17.428+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_column.gif
+2026-11-23T23:10:17.428+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_minus.gif -> status 200
+2026-11-23T23:10:17.428+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_table.gif
+2026-11-23T23:10:17.428+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_empty.gif
+2026-11-23T23:10:17.429+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_database.gif -> status 200
+2026-11-23T23:10:17.430+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_column.gif -> status 200
+2026-11-23T23:10:17.430+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_table.gif -> status 200
+2026-11-23T23:10:17.429+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_plus.gif -> status 200
+2026-11-23T23:10:17.431+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_empty.gif -> status 200
+2026-11-23T23:10:17.432+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_folder.gif
+2026-11-23T23:10:17.433+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_folder.gif -> status 200
+2026-11-23T23:10:17.434+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_info.gif
+2026-11-23T23:10:17.434+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_users.gif
+2026-11-23T23:10:17.436+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_users.gif -> status 200
+2026-11-23T23:10:17.436+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_index.gif
+2026-11-23T23:10:17.436+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_type.gif
+2026-11-23T23:10:17.436+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_index_az.gif
+2026-11-23T23:10:17.436+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_info.gif -> status 200
+2026-11-23T23:10:17.437+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_index_az.gif -> status 200
+2026-11-23T23:10:17.437+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_index.gif -> status 200
+2026-11-23T23:10:17.437+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_type.gif -> status 200
+2026-11-23T23:10:17.437+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_view.gif
+2026-11-23T23:10:17.439+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_view.gif -> status 200
+2026-11-23T23:10:17.440+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_user.gif
+2026-11-23T23:10:17.442+02:00  INFO 12324 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_user.gif -> status 200
+2026-11-23T23:10:48.511+02:00  INFO 12324 --- [LabSP] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-23T23:10:48.522+02:00  INFO 12324 --- [LabSP] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-23T23:10:48.528+02:00  INFO 12324 --- [LabSP] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:10:48.531+02:00  INFO 12324 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-23T23:10:48.533+02:00  INFO 12324 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-23T23:12:07.912+02:00  INFO 34900 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Starting LabSpApplication using Java 25 with PID 34900 (C:\Users\LENOVO\Documents\Facultate 3\LabSP\target\classes started by LENOVO in C:\Users\LENOVO\Documents\Facultate 3\LabSP)
+2026-11-23T23:12:07.914+02:00  INFO 34900 --- [LabSP] [main] com.example.labsp.LabSpApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-11-23T23:12:08.472+02:00  INFO 34900 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-23T23:12:08.495+02:00  INFO 34900 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2026-11-23T23:12:08.824+02:00  INFO 34900 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-23T23:12:08.835+02:00  INFO 34900 --- [LabSP] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-23T23:12:08.835+02:00  INFO 34900 --- [LabSP] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-23T23:12:08.876+02:00  INFO 34900 --- [LabSP] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 922 ms
+2026-11-23T23:12:09.047+02:00  INFO 34900 --- [LabSP] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-23T23:12:09.091+02:00  INFO 34900 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-23T23:12:09.430+02:00  INFO 34900 --- [LabSP] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-23T23:12:09.455+02:00  INFO 34900 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-23T23:12:09.625+02:00  INFO 34900 --- [LabSP] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/h2db/booksdb user=SA
+2026-11-23T23:12:09.628+02:00  INFO 34900 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-23T23:12:09.647+02:00  WARN 34900 --- [LabSP] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-23T23:12:09.667+02:00  INFO 34900 --- [LabSP] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:~/h2db/booksdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: BOOKSDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-23T23:12:10.469+02:00  INFO 34900 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-23T23:12:10.535+02:00  INFO 34900 --- [LabSP] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:12:10.589+02:00  WARN 34900 --- [LabSP] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-23T23:12:10.828+02:00  INFO 34900 --- [LabSP] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/h2db/booksdb'
+2026-11-23T23:12:10.875+02:00  INFO 34900 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-23T23:12:10.880+02:00  INFO 34900 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Started LabSpApplication in 3.348 seconds (process running for 3.845)
+2026-11-23T23:12:19.990+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T23:12:20.010+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T23:12:20.041+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/stylesheet.css
+2026-11-23T23:12:20.051+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/stylesheet.css -> status 200
+2026-11-23T23:12:20.064+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/login.jsp
+2026-11-23T23:12:20.068+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/login.jsp -> status 200
+2026-11-23T23:12:20.127+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/background.gif
+2026-11-23T23:12:20.129+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/background.gif -> status 200
+2026-11-23T23:12:21.850+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /h2-console/login.do
+2026-11-23T23:12:21.858+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /h2-console/login.do -> status 200
+2026-11-23T23:12:21.887+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/header.jsp
+2026-11-23T23:12:21.887+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tables.do
+2026-11-23T23:12:21.890+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/header.jsp -> status 200
+2026-11-23T23:12:21.894+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/query.jsp
+2026-11-23T23:12:21.894+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/help.jsp
+2026-11-23T23:12:21.897+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/help.jsp -> status 200
+2026-11-23T23:12:21.898+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/query.jsp -> status 200
+2026-11-23T23:12:21.928+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_disconnect.gif
+2026-11-23T23:12:21.929+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_line.gif
+2026-11-23T23:12:21.930+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_disconnect.gif -> status 200
+2026-11-23T23:12:21.930+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_line.gif -> status 200
+2026-11-23T23:12:21.930+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_commit.gif
+2026-11-23T23:12:21.930+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_refresh.gif
+2026-11-23T23:12:21.931+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_rollback.gif
+2026-11-23T23:12:21.931+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_commit.gif -> status 200
+2026-11-23T23:12:21.931+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_refresh.gif -> status 200
+2026-11-23T23:12:21.933+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_rollback.gif -> status 200
+2026-11-23T23:12:21.936+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_history.gif
+2026-11-23T23:12:21.936+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_help.gif
+2026-11-23T23:12:21.936+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run.gif
+2026-11-23T23:12:21.936+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_run_selected.gif
+2026-11-23T23:12:21.937+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_help.gif -> status 200
+2026-11-23T23:12:21.937+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_history.gif -> status 200
+2026-11-23T23:12:21.937+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/icon_stop.gif
+2026-11-23T23:12:21.937+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run.gif -> status 200
+2026-11-23T23:12:21.937+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_run_selected.gif -> status 200
+2026-11-23T23:12:21.938+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/icon_stop.gif -> status 200
+2026-11-23T23:12:22.031+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tables.do -> status 200
+2026-11-23T23:12:22.039+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree.js
+2026-11-23T23:12:22.042+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree.js -> status 200
+2026-11-23T23:12:22.049+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_plus.gif
+2026-11-23T23:12:22.049+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_database.gif
+2026-11-23T23:12:22.049+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_minus.gif
+2026-11-23T23:12:22.050+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_plus.gif -> status 200
+2026-11-23T23:12:22.050+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_table.gif
+2026-11-23T23:12:22.050+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_empty.gif
+2026-11-23T23:12:22.050+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_column.gif
+2026-11-23T23:12:22.050+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_minus.gif -> status 200
+2026-11-23T23:12:22.050+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_database.gif -> status 200
+2026-11-23T23:12:22.050+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_column.gif -> status 200
+2026-11-23T23:12:22.052+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-5] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_table.gif -> status 200
+2026-11-23T23:12:22.052+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_empty.gif -> status 200
+2026-11-23T23:12:22.053+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_users.gif
+2026-11-23T23:12:22.053+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_info.gif
+2026-11-23T23:12:22.053+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_folder.gif
+2026-11-23T23:12:22.054+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_folder.gif -> status 200
+2026-11-23T23:12:22.054+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-9] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_users.gif -> status 200
+2026-11-23T23:12:22.054+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-7] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_info.gif -> status 200
+2026-11-23T23:12:22.056+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_type.gif
+2026-11-23T23:12:22.056+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_index_az.gif
+2026-11-23T23:12:22.057+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_index.gif
+2026-11-23T23:12:22.057+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_index_az.gif -> status 200
+2026-11-23T23:12:22.057+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_type.gif -> status 200
+2026-11-23T23:12:22.058+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-4] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_index.gif -> status 200
+2026-11-23T23:12:22.061+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_user.gif
+2026-11-23T23:12:22.061+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /h2-console/tree_view.gif
+2026-11-23T23:12:22.063+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-8] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_user.gif -> status 200
+2026-11-23T23:12:22.063+02:00  INFO 34900 --- [LabSP] [http-nio-8080-exec-3] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /h2-console/tree_view.gif -> status 200
+2026-11-23T23:13:58.894+02:00  INFO 34900 --- [LabSP] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-23T23:13:58.901+02:00  INFO 34900 --- [LabSP] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-23T23:13:58.904+02:00  INFO 34900 --- [LabSP] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:13:58.905+02:00  INFO 34900 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-23T23:13:59.001+02:00  INFO 34900 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-23T23:14:10.536+02:00  INFO 6876 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Starting LabSpApplication using Java 25 with PID 6876 (C:\Users\LENOVO\Documents\Facultate 3\LabSP\target\classes started by LENOVO in C:\Users\LENOVO\Documents\Facultate 3\LabSP)
+2026-11-23T23:14:10.538+02:00  INFO 6876 --- [LabSP] [main] com.example.labsp.LabSpApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-11-23T23:14:11.010+02:00  INFO 6876 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-23T23:14:11.061+02:00  INFO 6876 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2026-11-23T23:14:11.358+02:00  INFO 6876 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-23T23:14:11.368+02:00  INFO 6876 --- [LabSP] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-23T23:14:11.368+02:00  INFO 6876 --- [LabSP] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-23T23:14:11.401+02:00  INFO 6876 --- [LabSP] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 825 ms
+2026-11-23T23:14:11.524+02:00  INFO 6876 --- [LabSP] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-23T23:14:11.558+02:00  INFO 6876 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-23T23:14:11.876+02:00  INFO 6876 --- [LabSP] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-23T23:14:11.900+02:00  INFO 6876 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-23T23:14:12.073+02:00  INFO 6876 --- [LabSP] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/h2db/booksdb user=SA
+2026-11-23T23:14:12.074+02:00  INFO 6876 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-23T23:14:12.101+02:00  WARN 6876 --- [LabSP] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-23T23:14:12.121+02:00  INFO 6876 --- [LabSP] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:~/h2db/booksdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: BOOKSDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-23T23:14:12.878+02:00  INFO 6876 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-23T23:14:12.925+02:00  INFO 6876 --- [LabSP] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:14:12.968+02:00  WARN 6876 --- [LabSP] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-23T23:14:13.243+02:00  INFO 6876 --- [LabSP] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-23T23:14:13.346+02:00  INFO 6876 --- [LabSP] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/h2db/booksdb'
+2026-11-23T23:14:13.390+02:00  INFO 6876 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-23T23:14:13.394+02:00  INFO 6876 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Started LabSpApplication in 3.17 seconds (process running for 3.643)
+2026-11-23T23:18:08.610+02:00  INFO 6876 --- [LabSP] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-23T23:18:08.616+02:00  INFO 6876 --- [LabSP] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-23T23:18:08.619+02:00  INFO 6876 --- [LabSP] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:18:08.621+02:00  INFO 6876 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-23T23:18:08.622+02:00  INFO 6876 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-23T23:18:12.627+02:00  INFO 20236 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Starting LabSpApplication using Java 25 with PID 20236 (C:\Users\LENOVO\Documents\Facultate 3\LabSP\target\classes started by LENOVO in C:\Users\LENOVO\Documents\Facultate 3\LabSP)
+2026-11-23T23:18:12.630+02:00  INFO 20236 --- [LabSP] [main] com.example.labsp.LabSpApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-11-23T23:18:13.076+02:00  INFO 20236 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-23T23:18:13.116+02:00  INFO 20236 --- [LabSP] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2026-11-23T23:18:13.392+02:00  INFO 20236 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-23T23:18:13.402+02:00  INFO 20236 --- [LabSP] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-23T23:18:13.403+02:00  INFO 20236 --- [LabSP] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-11-23T23:18:13.436+02:00  INFO 20236 --- [LabSP] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 768 ms
+2026-11-23T23:18:13.558+02:00  INFO 20236 --- [LabSP] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-23T23:18:13.591+02:00  INFO 20236 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-11-23T23:18:13.890+02:00  INFO 20236 --- [LabSP] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-23T23:18:13.913+02:00  INFO 20236 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-23T23:18:14.066+02:00  INFO 20236 --- [LabSP] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:~/h2db/booksdb user=SA
+2026-11-23T23:18:14.067+02:00  INFO 20236 --- [LabSP] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-23T23:18:14.092+02:00  WARN 20236 --- [LabSP] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-23T23:18:14.109+02:00  INFO 20236 --- [LabSP] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:file:~/h2db/booksdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: BOOKSDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-23T23:18:14.829+02:00  INFO 20236 --- [LabSP] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-23T23:18:14.875+02:00  INFO 20236 --- [LabSP] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:18:14.931+02:00  INFO 20236 --- [LabSP] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-23T23:18:15.022+02:00  WARN 20236 --- [LabSP] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-11-23T23:18:15.216+02:00  INFO 20236 --- [LabSP] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:~/h2db/booksdb'
+2026-11-23T23:18:15.252+02:00  INFO 20236 --- [LabSP] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-23T23:18:15.256+02:00  INFO 20236 --- [LabSP] [main] com.example.labsp.LabSpApplication       : Started LabSpApplication in 2.96 seconds (process running for 3.437)
+2026-11-23T23:19:11.039+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-23T23:19:11.040+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-23T23:19:11.041+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-23T23:19:11.046+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : BEFORE POST /books
+2026-11-23T23:19:11.195+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-1] c.e.labsp.filters.RequestLoggingFilter   : AFTER  POST /books -> status 202
+2026-11-23T23:19:33.408+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /tasks/858b0f76-82b5-4c73-9edf-944411e57861
+2026-11-23T23:19:33.439+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-6] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /tasks/858b0f76-82b5-4c73-9edf-944411e57861 -> status 200
+2026-11-23T23:19:41.281+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /books
+2026-11-23T23:19:41.443+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-10] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /books -> status 200
+2026-11-23T23:19:43.588+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : BEFORE GET /books/1
+2026-11-23T23:19:43.605+02:00  INFO 20236 --- [LabSP] [http-nio-8080-exec-2] c.e.labsp.filters.RequestLoggingFilter   : AFTER  GET /books/1 -> status 200
+2026-11-23T23:20:11.576+02:00  INFO 20236 --- [LabSP] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-11-23T23:20:11.583+02:00  INFO 20236 --- [LabSP] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-11-23T23:20:11.586+02:00  INFO 20236 --- [LabSP] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-23T23:20:11.588+02:00  INFO 20236 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-23T23:20:11.589+02:00  INFO 20236 --- [LabSP] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

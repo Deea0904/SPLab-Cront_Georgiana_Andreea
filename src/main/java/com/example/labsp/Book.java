@@ -1,11 +1,27 @@
 package com.example.labsp;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book implements Element {
+@Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+public class Book extends BaseElement implements Element {
+
     private String title;
-    private final List <Element> elements=new ArrayList<>();
-    private final List <Author> authors=new ArrayList<>();
+
+    @OneToMany(targetEntity = BaseElement.class, cascade = CascadeType.ALL)
+    private List<Element> elements = new ArrayList<>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    private List<Author> authors = new ArrayList<>();
+
+    public Book() {}
 
     public Book(String title) {
         this.title = title;
@@ -21,6 +37,14 @@ public class Book implements Element {
 
     public Author getAuthor(int index) {
         return authors.get(index);
+    }
+
+    public List<Author> getAuthors() {
+        return authors;
+    }
+
+    public List<Element> getElements() {
+        return elements;
     }
 
     public String getTitle() {
@@ -70,5 +94,4 @@ public class Book implements Element {
     public Element get(int index) {
         return elements.get(index);
     }
-
 }
