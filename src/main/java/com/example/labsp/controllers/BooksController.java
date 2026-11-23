@@ -2,6 +2,7 @@ package com.example.labsp.controllers;
 
 import com.example.labsp.Book;
 import com.example.labsp.commands.*;
+import com.example.labsp.observer.AllBooksSubject;
 import com.example.labsp.persistence.CrudRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,15 +22,18 @@ public class BooksController {
     private final SyncCommandExecutor syncExecutor;
     private final AsyncCommandExecutor asyncExecutor;
     private final TaskRegistry tasks;
+    private final AllBooksSubject allBooksSubject;
 
     public BooksController(CrudRepository<Book, Integer> repo,
                            SyncCommandExecutor syncExecutor,
                            AsyncCommandExecutor asyncExecutor,
-                           TaskRegistry tasks) {
+                           TaskRegistry tasks,
+                           AllBooksSubject allBooksSubject) {
         this.repo = repo;
         this.syncExecutor = syncExecutor;
         this.asyncExecutor = asyncExecutor;
         this.tasks = tasks;
+        this.allBooksSubject = allBooksSubject;
     }
 
     @GetMapping
@@ -47,6 +51,10 @@ public class BooksController {
     public ResponseEntity<Object> create(@RequestBody BookRequest req) {
         CompletableFuture<Book> future =
                 asyncExecutor.submit(new CreateBookCommand(repo, req.title()));
+
+        // când cartea e salvată, anunțăm observatorii (push către index.html)
+        future.thenAccept(allBooksSubject::add);
+
         String taskId = tasks.register(future);
         return ResponseEntity.accepted()
                 .location(URI.create("/tasks/" + taskId))
