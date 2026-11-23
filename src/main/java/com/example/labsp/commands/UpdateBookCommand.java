@@ -1,21 +1,24 @@
 package com.example.labsp.commands;
 
-import com.example.labsp.books.BookDTO;
-import com.example.labsp.books.BooksService;
+import com.example.labsp.Book;
+import com.example.labsp.persistence.CrudRepository;
 
-public class UpdateBookCommand implements Command<BookDTO> {
-    private final BooksService service;
+public class UpdateBookCommand implements Command<Book> {
+    private final CrudRepository<Book, Integer> repo;
     private final int id;
-    private final BookDTO book;
+    private final String title;
 
-    public UpdateBookCommand(BooksService service, int id, BookDTO book) {
-        this.service = service;
+    public UpdateBookCommand(CrudRepository<Book, Integer> repo, int id, String title) {
+        this.repo = repo;
         this.id = id;
-        this.book = book;
+        this.title = title;
     }
 
     @Override
-    public BookDTO execute() {
-        return service.update(id, book);
+    public Book execute() {
+        Book existing = repo.findById(id).orElse(null);
+        if (existing == null) return null;
+        existing.setTitle(title);
+        return repo.save(existing);
     }
 }

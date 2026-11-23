@@ -1,19 +1,19 @@
 package com.example.labsp.commands;
 
-import com.example.labsp.books.BookDTO;
-import com.example.labsp.books.BooksService;
+import com.example.labsp.Book;
+import com.example.labsp.persistence.CrudRepository;
 
-public class GetBookByIdCommand implements Command<BookDTO> {
-    private final BooksService service;
+public class GetBookByIdCommand implements Command<Book> {
+    private final CrudRepository<Book, Integer> repo;
     private final int id;
 
-    public GetBookByIdCommand(BooksService service, int id) {
-        this.service = service;
+    public GetBookByIdCommand(CrudRepository<Book, Integer> repo, int id) {
+        this.repo = repo;
         this.id = id;
     }
 
     @Override
-    public BookDTO execute() {
-        return service.getById(id);
+    public Book execute() {
+        return repo.findById(id).orElse(null);
     }
 }

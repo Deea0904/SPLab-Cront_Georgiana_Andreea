@@ -1,7 +1,14 @@
 package com.example.labsp;
 
-public class Table implements Element {
-    private final String data;
+import jakarta.persistence.Entity;
+
+@Entity
+@jakarta.persistence.Table(name = "BookTable")
+public class Table extends BaseElement implements Element {
+
+    private String data;
+
+    public Table() {}
 
     public Table(String data) {
         this.data = data;

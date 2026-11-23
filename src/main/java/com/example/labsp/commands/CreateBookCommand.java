@@ -1,19 +1,25 @@
 package com.example.labsp.commands;
 
-import com.example.labsp.books.BookDTO;
-import com.example.labsp.books.BooksService;
+import com.example.labsp.Book;
+import com.example.labsp.persistence.CrudRepository;
 
-public class CreateBookCommand implements Command<BookDTO> {
-    private final BooksService service;
-    private final BookDTO book;
+public class CreateBookCommand implements Command<Book> {
+    private final CrudRepository<Book, Integer> repo;
+    private final String title;
 
-    public CreateBookCommand(BooksService service, BookDTO book) {
-        this.service = service;
-        this.book = book;
+    public CreateBookCommand(CrudRepository<Book, Integer> repo, String title) {
+        this.repo = repo;
+        this.title = title;
     }
 
     @Override
-    public BookDTO execute() {
-        return service.create(book);
+    public Book execute() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+        Book book = new Book(title);
+        return repo.save(book);
     }
 }

@@ -1,8 +1,17 @@
 package com.example.labsp;
 
-public class Paragraph implements Element{
+import jakarta.persistence.Entity;
+import jakarta.persistence.Transient;
+
+@Entity
+public class Paragraph extends BaseElement implements Element {
+
     private String text;
+
+    @Transient
     private AlignStrategy textAlignment;
+
+    public Paragraph() {}
 
     public Paragraph(String name) {
         this.text = name;
@@ -20,7 +29,6 @@ public class Paragraph implements Element{
         this.textAlignment = textAlignment;
     }
 
-
     @Override
     public void print() {
         System.out.print("Paragraph: ");
@@ -35,19 +43,17 @@ public class Paragraph implements Element{
     public void accept(Visitor visitor) {
         visitor.visitParagraph(this);
     }
+
     @Override
     public void add(Element element) {
-
     }
 
     @Override
     public void remove(Element element) {
-
     }
 
     @Override
     public Element get(int index) {
         return null;
     }
-
 }

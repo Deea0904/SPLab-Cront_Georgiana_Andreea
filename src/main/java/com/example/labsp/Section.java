@@ -1,11 +1,21 @@
 package com.example.labsp;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Section implements Element{
-    private String name;
-    private final List<Element> elements= new ArrayList<>();
+@Entity
+public class Section extends BaseElement implements Element {
 
+    private String name;
+
+    @OneToMany(targetEntity = BaseElement.class, cascade = CascadeType.ALL)
+    private List<Element> elements = new ArrayList<>();
+
+    public Section() {}
 
     public Section(String name) {
         this.name = name;
@@ -26,6 +36,10 @@ public class Section implements Element{
         return elements.get(index);
     }
 
+    public List<Element> getElements() {
+        return elements;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -36,11 +50,12 @@ public class Section implements Element{
 
     @Override
     public void print() {
-        System.out.println( name);
+        System.out.println(name);
         for (Element element : elements) {
             element.print();
         }
     }
+
     @Override
     public void accept(Visitor visitor) {
         visitor.visitSection(this);
